@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+    }
+    
+    h1 {
+        color: #c05858;
+    }
+    
+    #game {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    
+    .choice {
+        border: 2px solid #333;
+        border-radius: 8px;
+        padding: 10px;
+        width: 150px;
+    }
+    
+    button {
+        margin-top: 10px;
+        cursor: pointer;
+        background-color: blueviolet;
+    }
+</style>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div id="game">
+        <div id="userChoice" class="choice">
+            <p>Your Choice</p>
+            <button onclick="makeChoice('rock')">Rock</button>
+            <button onclick="makeChoice('paper')">Paper</button>
+            <button onclick="makeChoice('scissors')">Scissors</button>
+        </div>
+        <div id="result">
+            <p id="resultText">Choose a move to start the game!</p>
+        </div>
+        <div id="computerChoice" class="choice">
+            <p>Computer's Choice</p>
+            <div id="computerMove"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
